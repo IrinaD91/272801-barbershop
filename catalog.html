@@ -7,9 +7,11 @@
 	<body>
 		<header class="main-header">
 			<div class="container">
+				<div class="logo">
+					<a class="logo-link" href="index.html"><img src="http://placehold.it/125x35" width="125" height="35" alt="barbershop"></a>
+				</div>
 				<nav class="main-navigation">
 					<ul>
-						<li><a class="logo" href="index.html"><img src="#" width="125" height="35" alt="Главная"></a></li>
 						<li><a href="#">Информация</a></li>
 						<li><a href="#">Новости</a></li>
 						<li><a href="#">Прайс-лист</a></li>
@@ -22,98 +24,93 @@
 				</div>
 			</div> 
 		</header>
-		<main class="container catalog">
-			<div class="breadcrumbs-header">
-				<h1>Средства для ухода</h1>
-				<ol class="breadcrumbs-list">
-					<li><a href="index.html">Главная</a></li>
-					<li><a href="catalog.html">Магазин</a></li>
-					<li><a href="#">Средства для ухода</a></li>
-				</ol>
-			</div>
+		<main class="container">
+			<h1 class="main-title">Средства для ухода</h1>
+			<ul class="breadcrumbs-list">
+				<li>Главная</li>
+				<li>Магазин</li>
+				<li>Средства для ухода</li>
+			</ul>
 			<form class="filter" action="/echo" method="post">				
-				<div class="manufacturers-form">
-					<h2 class="headline">ПРОИЗВОДИТЕЛИ:</h2>
-					<label><input type="checkbox" name="baxter" checked>BAXTER OF CALIFORNIA</label>
-					<label><input type="checkbox" name="natty">MR NATTY</label>
-					<label><input type="checkbox" name="suavecito" checked>SUAVECITO</label>
-					<label><input type="checkbox" name="malin-goetz">MALIN+GOETZ</label>
-					<label><input type="checkbox" name="murray">MURRAY'S</label>
-					<label><input type="checkbox" name="american-crew" checked>AMERICAN CREW</label>
+				<div class="filter-block">
+					<h2  class="subtitle-filter">Производители:</h2>
+					<input type="checkbox" id="baxter-id" name="baxter" checked>
+					<label class="label-cption" for="baxter-id">Baxter of California</label>
+					<input type="checkbox" id="natty-id" name="natty">
+					<label class="label-cption" for="natty-id">Mr Natty</label>
+					<input type="checkbox" id="suavecito-id" name="suavecito" checked>
+					<label class="label-cption" for="suavecito-id">Suavecito</label>
+					<input type="checkbox" id="malin-goetz-id" name="malin-goetz">
+					<label class="label-cption" for="malin-goetz-id">Malin+Goetz</label>
+					<input type="checkbox" id="murray-id" name="murray">
+					<label class="label-cption" for="murray-id">Murray's</label>
+					<input type="checkbox" id="american-crew-id" name="american-crew" checked>
+					<label class="label-cption" for="american-crew-id">American Crew</label>
 				</div>				
-				<div class="group-product">
-					<h2 class="headline">ГРУППЫ ТОВАРОВ:</h2>
-					<label><input type="radio" name="product-type" value="shaving-accessories">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</label>
-					<label><input type="radio" name="product-type" value="care-funds" checked>СРЕДСТВА ДЛЯ УХОДА</label>
-					<label><input type="radio" name="product-type" value="accessories">АКСЕССУАРЫ</label>
+				<div class="filter-block">
+					<h2 class="subtitle-filter">Группы товаров:</h2>
+					<input type="radio" id="shaving" name="product-type" value="shaving-accessories">
+					<label class="label-cption" for="shaving">Бритвенные принадлежности</label>
+					<input type="radio" id="care" name="product-type" value="care-funds" checked>
+					<label class="label-cption" for="care">Средства для ухода</label>
+					<input type="radio" id="accessories-id" name="product-type" value="accessories">
+					<label class="label-cption" for="accessories-id">Аксессуары</label>
 				</div>
-				<button class="btn" type="submit">ПОКАЗАТЬ</button>
+				<button class="btn" type="submit">Показать</button>
 			</form>
-			<div class="article-list">
-				<article class="article-item">
-					<a href="#">
-						<img src="http://placehold.it/150x100" alt="Набор для путешествий &#34;BAXTER OF CALIFORNIA&#34;">
-						<h3 class="subtitle">Набор для путешествий<br>&#34;BAXTER OF CALIFORNIA&#34;</h3>
-					</a>
+			<div class="catalog">
+				<article class="catalog-item">
+					<a href="#"><img src="http://placehold.it/150x100" alt="Набор для путешествий &#34;BAXTER OF CALIFORNIA&#34;"></a>
+					<a class="catalog-item-name" href="#"><span>Набор для путешествий<span>&#34;Baxter of California&#34;</a>
 					<div class="price">
-						<span>2900 РУБ.</span>
-						<a class="btn" href="#">КУПИТЬ</a>
+						<span>2900 руб.</span>
+						<a href="#">Купить</a>
 					</div>
 				</article>
-				<article class="article-item">
-					<a href="#">
-						<img src="http://placehold.it/150x100" alt="Увлажняющий кондиционер &#34;BAXTER OF CALIFORNIA&#34;">
-						<h3 class="subtitle">Увлажняющий кондиционер<br>&#34;BAXTER OF CALIFORNIA&#34;</h3>
-					</a>
+				<article class="catalog-item">
+					<a href="#"><img src="http://placehold.it/150x100" alt="Увлажняющий кондиционер &#34;BAXTER OF CALIFORNIA&#34;"></a>
+					<a class="catalog-item-name" href="#"><span>Увлажняющий кондиционер<span>&#34;Baxter of California&#34;</a>
 					<div class="price">
-						<span>750 РУБ.</span>
-						<a class="btn" href="#">КУПИТЬ</a>
+						<span>750 руб.</span>
+						<a href="#">Купить</a>
 					</div>
 				</article>
-				<article class="article-item">
-					<a href="#">
-						<img src="http://placehold.it/150x100" alt="Гель для волос &#34;SUAVECITO&#34;">
-						<h3 class="subtitle">Гель для волос<br>&#34;SUAVECITO&#34;</h3>
-					</a>
+				<article class="catalog-item">
+					<a href="#"><img src="http://placehold.it/150x100" alt="Гель для волос &#34;SUAVECITO&#34;"></a>
+					<a class="catalog-item-name" href="#"><span>Гель для волос<span>&#34;Suavecito&#34;</a>
 					<div class="price">
-						<span>290 РУБ.</span>
-						<a class="btn" href="#">КУПИТЬ</a>
+						<span>290 руб.</span>
+						<a href="#">Купить</a>
 					</div>
 				</article>
-				<article class="article-item">
-					<a href="#">
-						<img src="http://placehold.it/150x100" alt="Глина для укладки волос &#34;AMERICAN CREW&#34;">
-						<h3 class="subtitle">Глина для укладки волос<br>&#34;AMERICAN CREW&#34;</h3>
-					</a>
+				<article class="catalog-item">
+					<a href="#"><img src="http://placehold.it/150x100" alt="Глина для укладки волос &#34;AMERICAN CREW&#34;"></a>
+					<a class="catalog-item-name" href="#"><span>Глина для укладки волос<span>&#34;American crew&#34;</a>
 					<div class="price">
-						<span>500 РУБ.</span>
-						<a class="btn" href="#">КУПИТЬ</a>
+						<span>500 руб.</span>
+						<a href="#">Купить</a>
 					</div>
 				</article>
-				<article class="article-item">
-					<a href="#">
-						<img src="http://placehold.it/150x100" alt="Гель для волос &#34;AMERICAN CREW&#34;">
-						<h3 class="subtitle">Гель для волос<br>&#34;AMERICAN CREW&#34;</h3>
-					</a>
+				<article class="catalog-item">
+					<a href="#"><img src="http://placehold.it/150x100" alt="Гель для волос &#34;AMERICAN CREW&#34;"></a>
+					<a class="catalog-item-name" href="#"><span>Гель для волос<span>&#34;American crew&#34;</a>
 					<div class="price">
-						<span>300 РУБ.</span>
-						<a class="btn" href="#">КУПИТЬ</a>
+						<span>300 руб.</span>
+						<a href="#">Купить</a>
 					</div>
 				</article>
-				<article class="article-item">
-					<a href="#">
-						<img src="http://placehold.it/150x100" alt="Набор для бритья &#34;BAXTER OF CALIFORNIA&#34;">
-						<h3 class="subtitle">Набор для бритья<br>&#34;BAXTER OF CALIFORNIA&#34;</h3>
-					</a>
+				<article class="catalog-item">
+					<a href="#"><img src="http://placehold.it/150x100" alt="Набор для бритья &#34;BAXTER OF CALIFORNIA&#34;"></a>
+					<a class="catalog-item-name" href="#"><span>Набор для бритья<span>&#34;Baxter of California&#34;</a>
 					<div class="price">
-						<span>3900 РУБ.</span>
-						<a class="btn" href="#">КУПИТЬ</a>
+						<span>3900 руб.</span>
+						<a href="#">Купить</a>
 					</div>
 				</article>
 			</div>
-			<ul class="article-pagination">
+			<ul class="pagination">
 				<li><a class="btn" href="#">1</a></li>
-				<li><a class="btn" href="#">2</a></li>
+				<li>2</li>
 			 	<li><a class="btn" href="#">3</a></li>
 				<li><a class="btn" href="#">4</a></li>
 			</ul>
