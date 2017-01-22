@@ -7,9 +7,7 @@
 	<body>
 		<header class="main-header">
 			<div class="container">
-				<div class="logo">
-					<a class="logo-link" href="index.html"><img src="http://placehold.it/125x35" width="125" height="35" alt="barbershop"></a>
-				</div>
+				<a class="logo-link" href="index.html"><img src="http://placehold.it/125x35" width="125" height="35" alt="barbershop"></a>
 				<nav class="main-navigation">
 					<ul>
 						<li><a href="#">Информация</a></li>
@@ -26,26 +24,26 @@
 		</header>
 		<main class="container">
 			<h1 class="main-title">Средства для ухода</h1>
-			<ul class="breadcrumbs-list">
-				<li>Главная</li>
-				<li>Магазин</li>
+			<ul class="breadcrumbs">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="catalog.html">Магазин</a></li>
 				<li>Средства для ухода</li>
 			</ul>
 			<form class="filter" action="/echo" method="post">				
 				<div class="filter-block">
 					<h2  class="subtitle-filter">Производители:</h2>
-					<input type="checkbox" id="baxter-id" name="baxter" checked>
-					<label class="label-cption" for="baxter-id">Baxter of California</label>
-					<input type="checkbox" id="natty-id" name="natty">
-					<label class="label-cption" for="natty-id">Mr Natty</label>
-					<input type="checkbox" id="suavecito-id" name="suavecito" checked>
-					<label class="label-cption" for="suavecito-id">Suavecito</label>
-					<input type="checkbox" id="malin-goetz-id" name="malin-goetz">
-					<label class="label-cption" for="malin-goetz-id">Malin+Goetz</label>
-					<input type="checkbox" id="murray-id" name="murray">
-					<label class="label-cption" for="murray-id">Murray's</label>
-					<input type="checkbox" id="american-crew-id" name="american-crew" checked>
-					<label class="label-cption" for="american-crew-id">American Crew</label>
+					<input type="checkbox" id="baxter" name="baxter" checked>
+					<label class="label-cption" for="baxter">Baxter of California</label>
+					<input type="checkbox" id="natty" name="natty">
+					<label class="label-cption" for="natty">Mr Natty</label>
+					<input type="checkbox" id="suavecito" name="suavecito" checked>
+					<label class="label-cption" for="suavecito">Suavecito</label>
+					<input type="checkbox" id="malin-goetz" name="malin-goetz">
+					<label class="label-cption" for="malin-goetz">Malin+Goetz</label>
+					<input type="checkbox" id="murray" name="murray">
+					<label class="label-cption" for="murray">Murray's</label>
+					<input type="checkbox" id="american-crew" name="american-crew" checked>
+					<label class="label-cption" for="american-crew">American Crew</label>
 				</div>				
 				<div class="filter-block">
 					<h2 class="subtitle-filter">Группы товаров:</h2>
@@ -53,8 +51,8 @@
 					<label class="label-cption" for="shaving">Бритвенные принадлежности</label>
 					<input type="radio" id="care" name="product-type" value="care-funds" checked>
 					<label class="label-cption" for="care">Средства для ухода</label>
-					<input type="radio" id="accessories-id" name="product-type" value="accessories">
-					<label class="label-cption" for="accessories-id">Аксессуары</label>
+					<input type="radio" id="accessories" name="product-type" value="accessories">
+					<label class="label-cption" for="accessories">Аксессуары</label>
 				</div>
 				<button class="btn" type="submit">Показать</button>
 			</form>
