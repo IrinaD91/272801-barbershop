@@ -1,0 +1,36 @@
+
+@font-face { 
+	font-family: 'PT Sans Narrow';
+	src: url('../fonts/ptsansnarrow.woff') format('woff');
+	font-weight: normal;
+  	font-style: normal;
+}
+
+@font-face { 
+	font-family: 'PT Sans Narrow';
+	src: url('../fonts/ptsansnarrowbold.woff') format('woff');
+	font-weight: bold;
+  	font-style: normal;
+}
+
+body {
+	font-family: 'PT Sans Narrow';
+    font-size: 14px;
+	font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: 0.05em;
+    color: #f7f4f1;
+	background: #282828;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 24px;
+}
+b {
+	font-size: 15px;
+}
