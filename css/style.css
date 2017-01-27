@@ -1,27 +1,28 @@
 
 @font-face { 
-	font-family: 'PT Sans Narrow';
-	src: url('../fonts/ptsansnarrow.woff') format('woff');
+	font-family: "PT Sans Narrow";
+	src: url("../fonts/ptsansnarrow.woff") format("woff"),
+		 url("../fonts/ptsansnarrow.woff2") format("woff2");
 	font-weight: normal;
   	font-style: normal;
 }
 
 @font-face { 
-	font-family: 'PT Sans Narrow';
-	src: url('../fonts/ptsansnarrowbold.woff') format('woff');
+	font-family: "PT Sans Narrow";
+	src: url("../fonts/ptsansnarrowbold.woff") format("woff"),
+		 url("../fonts/ptsansnarrowbold.woff2") format("woff2");
 	font-weight: bold;
   	font-style: normal;
 }
 
 body {
-	font-family: 'PT Sans Narrow';
-    font-size: 14px;
-	font-style: normal;
-    font-weight: normal;
-    line-height: normal;
-    letter-spacing: 0.05em;
-    color: #f7f4f1;
 	background: #282828;
+    color: #000;
+	font-family: "PT Sans Narrow", Arial, sans-serif; 
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+    text-transform: uppercase;
 }
 
 h1 {
@@ -30,7 +31,38 @@ h1 {
 
 h2 {
 	font-size: 24px;
+	line-height: 1.25;
 }
+
 b {
-	font-size: 15px;
+	font-size: 30px;
+	
+}
+
+p {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.714;
+}
+
+header, footer {
+	color: #f7f4f1;
+	line-height: 1.714;
+}
+
+header a, footer a {
+	color: #f7f4f1;
+	text-decoration: none;
+}
+
+main {
+	background: url("../img/main-texture.jpg") repeat;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.main-header {
+	background: url("../img/header-texture.jpg") repeat;
 }
