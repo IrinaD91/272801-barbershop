@@ -59,10 +59,20 @@ main {
 	background: url("../img/main-texture.jpg") repeat;
 }
 
-ul {
-	list-style-type: none;
-}
-
 .main-header {
 	background: url("../img/header-texture.jpg") repeat;
+}
+
+.main-footer {
+	background: url("../img/footer-texture.jpg") repeat;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+ul {
+	list-style-type: none;
 }
